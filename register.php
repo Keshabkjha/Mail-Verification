@@ -69,13 +69,13 @@ function sendCode($email, $subject, $code) {
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'developerkeshab@gmail.com';                     // SMTP username
-        $mail->Password   = 'swgr upyx kenq rsal';                               // SMTP password
+        $mail->Username   = 'username';                     // SMTP username
+        $mail->Password   = 'your password';                               // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Enable implicit TLS encryption
         $mail->Port       = 465;                                    // TCP port to connect to
     
         //Recipients
-        $mail->setFrom('developerkeshab@gmail.com', 'SafarBot');
+        $mail->setFrom('username', 'domain');
         $mail->addAddress($email); 
     
         //Content
